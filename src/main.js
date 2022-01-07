@@ -12,8 +12,6 @@ if (menuElement) {
         </li>`)
         .join("");
     menuElement.innerHTML = newMenu;
-    console.log(menuElement);
-    console.log(newMenu);
 }
 if (newsElement) {
     const result = news
@@ -21,7 +19,7 @@ if (newsElement) {
         <article class="border py-[20px] px-[20px] ml-[30px]">
           <img src="${newItem.img}" alt="">
           <a href="#">
-              <h3 class="text-base font-bold text-orange-600 py-3 hover:text-pink-50">${newItem.title}</h3>
+              <h3 class="text-base font-bold text-orange-600 py-3 hover:text-pink-500">${newItem.title}</h3>
           </a>
           <p>${newItem.content}</p>
         </article>`)
@@ -34,7 +32,7 @@ if (actElement) {
         <article class="border py-[20px] px-[20px] ml-[30px] mb-[30px]">
           <img src="${actItem.img}" alt="">
           <a href="#">
-              <h3 class="text-base font-bold text-orange-600 py-3 hover:text-pink-50">${actItem.title}</h3>
+              <h3 class="text-base font-bold text-orange-600 py-3 hover:text-pink-500">${actItem.title}</h3>
           </a>
           <p>${actItem.content}</p>
         </article>`)
