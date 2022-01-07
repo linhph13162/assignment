@@ -1,7 +1,20 @@
 import "../style.css";
-import { news, act } from "./data";
+import { news, act, listMenu } from "./data";
 
 const newsElement = document.querySelector("#news");
+const actElement = document.querySelector("#act");
+const menuElement = document.querySelector("#menu");
+if (menuElement) {
+    const newMenu = listMenu
+        .map((item) => `
+        <li class="px-5 text-white hover:underline">
+            <a href="">${item}</a>
+        </li>`)
+        .join("");
+    menuElement.innerHTML = newMenu;
+    console.log(menuElement);
+    console.log(newMenu);
+}
 if (newsElement) {
     const result = news
         .map((newItem) => `
@@ -15,7 +28,6 @@ if (newsElement) {
         .join("");
     newsElement.innerHTML = result;
 }
-const actElement = document.querySelector("#act");
 if (actElement) {
     const result2 = act
         .map((actItem) => `
