@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container mx-auto w-[1200px] box-border">
+        <header class="">
+            <div class="bg-blue-800 py-[20px]">
+                <a href=""><img src="https://picsum.photos/200/40" alt="" class="mx-auto"></a>
+            </div>
+            <nav class="flex justify-between py-[10px] bg-orange-500">
+                <ul class="flex">
+                    <li class="px-5 text-white hover:underline">
+                        <a href="">Trang chủ</a>
+                    </li>
+                    <li class="px-5 text-white hover:underline">
+                        <a href="">Tuyển sinh</a>
+                    </li>
+                    <li class="px-5 text-white hover:underline">
+                        <a href="">Chương trình đào tạo</a>
+                    </li>
+                    <li class="px-5 text-white hover:underline">
+                        <a href="">Góc sinh viên</a>
+                    </li>
+                    <li class="px-5 text-white hover:underline">
+                        <a href="">Tuyển dụng</a>
+                    </li>
+                </ul>
+                <form action="" class="mr-5">
+                    <input type="text" name="" id="" required>
+                    <input type="submit" value="Tìm kiếm" class="px-3 ml-3 bg-blue-900 text-white cursor-pointer">
+                </form>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <img src="https://picsum.photos/1200/300" alt="" class="my-3">
+            </section>
+            <h2 class="font-bold text-lg py-3">TIN TỨC HỌC TẬP</h2>
+            <section class="flex justify-between -ml-[30px]" id="news">
+            </section>
+            <h2 class="font-bold text-lg py-3">HOẠT ĐỘNG SINH VIÊN</h2>
+            <section class="flex justify-between -ml-[30px]" id="act">
+            </section>
+        </main>
+        <footer class="bg-blue-900 text-center text-white py-5">
+            <p>TÊN SINH VIÊN</p>
+        </footer>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="./src/main.js"></script>
+</body>
+
+</html>
