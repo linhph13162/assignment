@@ -16,7 +16,7 @@ if (menuElement) {
 if (newsElement) {
     const result = news
         .map((newItem) => `
-        <article class="border py-[20px] px-[20px] ml-[30px]">
+        <article class="border py-[20px] px-[20px] ml-[30px] mb-[30px]">
           <img src="${newItem.img}" alt="">
           <a href="#">
               <h3 class="text-base font-bold text-orange-600 py-3 hover:text-pink-500">${newItem.title}</h3>
